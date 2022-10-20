@@ -1,0 +1,30 @@
+//Defining one HashSet object called setWithNoDuplicates
+//Remember, HashSet allows only unique elements
+
+Set setWithNoDuplicates = new HashSet<>();
+
+//Adding all elements of mergedArray into setWithNoDuplicates
+
+for (int m = 0; m < mergedArray.length; m++)
+{
+ setWithNoDuplicates.add(mergedArray[m]);
+}
+
+//Now, setWithNoDuplicates will have only unique elements of mergedArray
+
+//So, now iterate setWithNoDuplicates and
+//add its elements into new array called mergedArrayWithNoDuplicates
+
+Iterator it = setWithNoDuplicates.iterator();
+
+int[] mergedArrayWithNoDuplicates = new int[setWithNoDuplicates.size()];
+
+int n = 0;
+
+//Adding all elements of setWithNoDuplicates into mergedArrayWithNoDuplicates
+
+while (it.hasNext())
+{
+ mergedArrayWithNoDuplicates[n] = it.next();
+ n++;
+}
