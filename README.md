@@ -1,2 +1,2 @@
 # Code_basics
-Just basic code basics
+Just the code basics
